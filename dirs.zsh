@@ -4,4 +4,4 @@ function changeCodeContext() {
 }
 
 # Add aliases for different code contexts.
-alias codezsh='changeCodeContext ~/.oh-my-zsh/custom/'
+alias codedot="changeCodeContext ~/Dev/dotfiles/"
