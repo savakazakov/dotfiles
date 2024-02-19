@@ -60,18 +60,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Plugins:
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	git
-	zsh-autosuggestions
-	zsh-syntax-highlighting 
-	web-search
-	ripgrep
-)
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
