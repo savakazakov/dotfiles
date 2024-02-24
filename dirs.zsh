@@ -1,6 +1,6 @@
 function changeCodeContext() {
   cd $1 &&
-    code $1 -r
+    code $1 -n
 }
 
 # Add aliases for different code contexts.
