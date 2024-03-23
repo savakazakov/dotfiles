@@ -53,3 +53,6 @@ unset __conda_setup
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Make fzf not ignore the contents of .gitignore files.
+export FZF_FD_IGNORE=1

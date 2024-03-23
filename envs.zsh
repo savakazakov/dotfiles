@@ -20,7 +20,9 @@ fd_with_options() {
   fi
 }
 
-export FZF_DEFAULT_COMMAND="fd_with_options f"
+# Previously used to work:
+# export FZF_DEFAULT_COMMAND="fd_with_options f"
+export FZF_DEFAULT_COMMAND="zsh -c '. ~/Dev/dotfiles/envs.zsh; fd_with_options f'"
 export FZF_DEFAULT_OPTS="--no-height --reverse --border \
 --color=bg+:#1e1f29,fg+:#f8f8f2,hl:#ff6c6b \
 --color=fg:#f8f8f2,bg:#1e1f29,hl+:#f1fa8c \
@@ -32,7 +34,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
 
 # For directories (Alt-C)
-export FZF_ALT_C_COMMAND="fd_with_options d"
+export FZF_ALT_C_COMMAND="zsh -c '. ~/Dev/dotfiles/envs.zsh; fd_with_options d'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 
 # bat:
