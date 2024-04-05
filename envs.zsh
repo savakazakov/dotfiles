@@ -37,5 +37,14 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
 export FZF_ALT_C_COMMAND="zsh -c '. ~/Dev/dotfiles/envs.zsh; fd_with_options d'"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 
+# Make fzf not ignore the contents of .gitignore files.
+export FZF_FD_IGNORE=1
+
 # bat:
 export BAT_THEME="Sublime Snazzy"
+
+# homebrew:
+export HOMEBREW_AUTO_UPDATE_SEC=604800
+
+# raycast:
+export OPENAI_API_KEY=$(lpass show --notes 'OpenAI API key')
