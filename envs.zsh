@@ -44,7 +44,7 @@ export FZF_FD_IGNORE=1
 export BAT_THEME="Sublime Snazzy"
 
 # homebrew:
-export HOMEBREW_AUTO_UPDATE_SEC=604800
+export HOMEBREW_AUTO_UPDATE_SECS=604800
 
 # raycast:
 export OPENAI_API_KEY=$(lpass show --notes 'OpenAI API key')

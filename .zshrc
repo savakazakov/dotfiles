@@ -53,6 +53,7 @@ unset __conda_setup
 
 # fzf:
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # homebrew:
 brew upgrade 
