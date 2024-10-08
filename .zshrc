@@ -19,7 +19,6 @@ if [[ "$ITERM_PROFILE" ]]; then
 		zsh-autosuggestions
 		zsh-syntax-highlighting 
 		web-search
-		ripgrep
 		thefuck
 		brew
 		docker
@@ -53,6 +52,7 @@ unset __conda_setup
 
 # fzf:
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# To set up shell integration.
 source <(fzf --zsh)
 
 # homebrew:
