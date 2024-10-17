@@ -1,5 +1,5 @@
 # Check if this is Iterm2. Use oh-my-zsh only in Iterm2.
-if [[ "$ITERM_PROFILE" ]]; then
+if [[ "$TERM_PROGRAM" == "vscode" || "$ITERM_PROFILE" ]]; then
   	# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 	# Initialization code that may require console input (password prompts, [y/n]
 	# confirmations, etc.) must go above this block; everything else may go below.
@@ -55,6 +55,7 @@ unset __conda_setup
 # To set up shell integration.
 source <(fzf --zsh)
 
-# homebrew:
-brew upgrade 
-brew upgrade --cask
+# # homebrew:
+# Causes output which interferes with instant prompt from p10k.
+# brew upgrade 
+# brew upgrade --cask

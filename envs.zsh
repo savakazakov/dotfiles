@@ -47,4 +47,5 @@ export BAT_THEME="Sublime Snazzy"
 export HOMEBREW_AUTO_UPDATE_SECS=604800
 
 # raycast:
-export OPENAI_API_KEY=$(lpass show --notes 'OpenAI API key')
+# Causes instant prompt to error.
+# export OPENAI_API_KEY=$(lpass show --notes 'OpenAI API key')
